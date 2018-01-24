@@ -1,0 +1,4 @@
+UI中回调事件 2D不需要public，3D需要public
+当切换scence时，以前的数据重头开始；但是Time.time会一直存在累ji
+隐藏的不活跃的物体？  不会运行update
+ontriiger 不需要enble
