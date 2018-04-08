@@ -1,4 +1,12 @@
 UI中回调事件 2D不需要public，3D需要public
-当切换scence时，以前的数据重头开始；但是Time.time会一直存在累ji
+当切换scence时，以前的数据重头开始；但是Time.time会一直存在累积。静态会累加直到游戏结束，单例会在场景切换结束。
 隐藏的不活跃的物体？  不会运行update
 ontriiger 不需要enble
+
+Transfor.position  transform.RotateAround  moveToward是以世界坐标为准
+Rotation  translate  rotate   是以自身坐标为准
+
+触发，子物体的触发onTrigger方法会一直执行，无论enable=false
+勾选触发，就不会有碰撞效果
+
+销毁父物体会同时销毁其子物体，销毁子物体而父物体无影响
